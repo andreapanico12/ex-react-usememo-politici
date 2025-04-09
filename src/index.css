@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+/* Contenitore principale per tutte le card */
+.politicians-card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 3 card per riga */
+  gap: 20px; /* Distanza tra le card */
+  padding: 20px;
+  justify-items: center; /* Centra le card orizzontalmente nella griglia */
+}
+
+/* Stile per ogni singola card */
+.politician-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: 280px; /* Dimensione media per ogni card */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.politician-card:hover {
+  transform: translateY(-5px); /* Effetto hover */
+}
+
+/* Immagine nella card */
+.politician-card img {
+  width: 100%;
+  height: 180px; /* Altezza fissa per l'immagine */
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* Stile per il nome */
+.politician-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+/* Stile per il paragrafo (testo) */
+.politician-card p {
+  font-size: 0.8rem;
+  margin: 5px 0;
+  text-align: left;
+}
+
+/* Stile per il titolo dei paragrafi */
+.politician-card p strong {
+  font-weight: bold;
+}
